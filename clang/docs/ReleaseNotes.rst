@@ -337,6 +337,8 @@ Bug Fixes to C++ Support
 - Fixed a crash when `explicit(bool)` is used with an incomplete enumeration. (#GH183887)
 - Fixed a crash on ``typeid`` of incomplete local types during template instantiation. (#GH63242), (#GH176397)
 
+- Fixed a crash when an immediate-invoked ``consteval`` lambda is used as an invalid initializer. (#GH185270)
+
 - Fix initialization of GRO when GRO-return type mismatches, as part of CWG2563. (#GH98744)
 
 Bug Fixes to AST Handling
